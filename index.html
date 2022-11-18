@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>First project</title>
+</head>
+<body>
+    <header class="header center" id="header">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="лого">
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__elem"><a href="#" class="nav__link">
+                    Главная
+                </a></li>
+                <li><a href="#">
+                    Мероприятия
+                </a></li>
+                <li><a href="#">
+                    Контакты
+                </a></li>
+                <li><a href="#">
+                    Блог
+                </a></li>
+                <li>
+                    <a href="#" class="button button--header">
+                        УЗНАТЬ БОЛЬШЕ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="offer center">
+            <h1 class="offer__title">
+                Ваш личный психолог
+                В Кривом Роге
+            </h1>
+            <p  class="offer__desc">
+                Личные, семейные и
+                групповые консультаци
+            </p>
+            <a href="#" class="button">
+                УЗНАТЬ БОЛЬШЕ
+            </a>
+        </section>
+        <section class="center services" id="services">
+            <article class="services__item">
+                <svg width="52" height="56" class="services__icon" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#icon1"></use>
+                </svg>
+                <h2 class="services__title">Личные консультации</h2>
+                <p class="services__desc">Достижения поставленных целей бывает сложной задачей, но при правильной поддержке нет ничего не возможного</p>
+            </article>
+            <article class="services__item">
+                <svg width="56" height="56" class="services__icon"   xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#icon2"></use>
+                </svg>
+                <h2 class="services__title">Семейная терапия</h2>
+                <p class="services__desc">У любой семьи бывают кризисные ситуации, поэтому в такие моменты важно поддерживать друг друга</p>
+            </article>
+            <article class="services__item">
+                <svg width="56" height="56" class="services__icon"  xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#icon3"></use>
+                </svg>
+                <h2 class="services__title">Сенситивные группы</h2>
+                <p class="services__desc">Групповые занятия — отличное место, чтобы научиться общаться с окружающими людьми и раскрыть свой потенциал</p>
+            </article>
+        </section>
+        <section class="about center" id="about">
+            <h2 class="about__title">
+                Немного обо мне
+            </h2>
+            <p class="about__text">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо.
+            </p>
+            <div class="about__buttons">
+                <a href="#" class="button button--bordered">
+                    Задать вопрос
+                </a>
+                <a href="#" class="button">
+                    Хочу консультацию
+                </a>
+            </div>
+            <div  class="about__photo">
+                <img src="img/about-photo.jpg" alt="моё фото">
+            </div>
+        </section>
+        <section class="appointment center" id="form">
+            <h2 class="appointment__title">
+                Записаться на прием
+            </h2>
+            <form class="form">
+                <input type="text" class="form__input" placeholder="Ваше имя *">
+                <input type="tel" class="form__input" placeholder="Ваш телефон *">
+                <select name="" id="" class="form__input form__input--select">
+                    <option value="1">
+                        Тема встречи 1
+                    </option>
+                    <option value="2">
+                        Тема встречи 2
+                    </option>
+                    <option value="3">
+                        Тема встречи 3
+                    </option>
+                    <option value="4">
+                        Тема встречи 4
+                    </option>
+                </select>
+                <textarea class="form__input form__input--textarea"></textarea>
+                <label class="form__checkbox">
+                    <input type="checkbox" class="form__checkbox_input" checked>
+                    <span class="form__checkbox_label">Я согласен с политикой конфиденциальности</span>
+                </label>
+                <button type="submit" class="button">Отправить</button>
+            </form>
+        </section>
+        <section class="services services--counters center">
+            <article class="services__item">
+                <p class="services__number">120 мин</p>
+                <h3 class="services__title">Время консультации</h3>
+                <p class="services__desc">Оптимально для того, чтобы найти выход и сделать очередной шаг</p>
+            </article>
+            <article class="services__item">
+                <p class="services__number">от 200 грн</p>
+                <h3 class="services__title">Стоимость</h3>
+                <p class="services__desc">Цена доступна для любого человека, нуждающего в помощи</p>
+            </article>
+            <article class="services__item">
+                <p class="services__number">75+</p>
+                <h3 class="services__title">Довольных клиентов</h3>
+                <p class="services__desc">Результат — улыбка на лице и ощущение счастья</p>
+            </article>
+        </section>
+        <section class="reviews center">
+            <h2 class="reviews__title">
+                Отзывы клиентов
+            </h2>
+
+            <div class="reviews__slider">
+                <button class="reviews__arrow reviews__arrow--prev">
+                    <span class="material-symbols-outlined">
+                    arrow_back_ios
+                    </span>
+                </button>
+                <div class="reviews__slides_list">
+                    <article class="reviews__slide_item reviews__slide_item--active">
+                        <div class="reviews__slide_avatar">
+                            <img src="img/slider-girl.jpg" alt="Марина">
+                        </div>
+                        <h6 class="reviews__slide_name">
+                            Марина, 25 лет
+                        </h6>
+                        <p class="reviews__slide_text">
+                            Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация казалась мне безвыходной – несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от огромного кома. Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое спасибо Валентину.
+                        </p>
+                    </article>
+                    <article class="reviews__slide_item">
+                        <div class="reviews__slide_avatar">
+                            <img src="img/about-photo.jpg" alt="Марина">
+                        </div>
+                        <h6 class="reviews__slide_name">
+                            Марина, 25 лет
+                        </h6>
+                        <p class="reviews__slide_text">
+                            Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация казалась мне безвыходной – несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от огромного кома. Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое спасибо Валентину.
+                        </p>
+                    </article>
+                    <article class="reviews__slide_item">
+                        <div class="reviews__slide_avatar">
+                            <img src="img/photo-to-main-offer.jpg" alt="Марина">
+                        </div>
+                        <h6 class="reviews__slide_name">
+                            Марина, 25 лет
+                        </h6>
+                        <p class="reviews__slide_text">
+                            Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация казалась мне безвыходной – несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от огромного кома. Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое спасибо Валентину.
+                        </p>
+                    </article>
+                </div>
+                <button class="reviews__arrow reviews__arrow--next">
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                </button>
+            </div>
+        </section>
+        <section class="services services--articles center">
+            <h2 class="services__header">
+                Последние статьи
+            </h2>
+            <article class="services__item">
+                <img class="services__img" src="img/news-1.jpg" alt="Жить, а не бояться: как справляться с канцерофобией">
+                <h3 class="services__title">Жить, а не бояться: как справляться с канцерофобией</h3>
+            </article>
+            <article class="services__item">
+                <img class="services__img" src="img/news-2.jpg" alt="Брат мой, враг мой: почему враждуют братья и сестры?">
+                <h3 class="services__title">Брат мой, враг мой: почему враждуют братья и сестры?</h3>
+            </article>
+            <article class="services__item">
+                <img class="services__img" src="img/news-3.jpg" alt="8 советов, как оставаться продуктивным и не сойти с ума">
+                <h3 class="services__title">8 советов, как оставаться продуктивным и не сойти с ума</h3>
+            </article>
+        </section>
+        <section class="faq center">
+            <h2 class="faq__title">
+                Частые вопросы
+            </h2>
+            <details class="accordion" open>
+                <summary class="accordion__toggler">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.9146 8.6046H11.3953V1.08527C11.3953 0.742732 10.9302 0 9.99996 0C9.06974 0 8.6046 0.742772 8.6046 1.08527V8.60464H1.08527C0.742772 8.6046 0 9.06973 0 9.99992C0 10.9301 0.742772 11.3953 1.08527 11.3953H8.60464V18.9146C8.60464 19.2571 9.06974 19.9999 10 19.9999C10.9303 19.9999 11.3954 19.2571 11.3954 18.9146V11.3953H18.9147C19.2572 11.3953 20 10.9302 20 9.99992C20 9.06965 19.2571 8.6046 18.9146 8.6046Z"/>
+                    </svg>
+                    Какой у вас график работы?
+                </summary>
+                <p>
+                    Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. Записаться на прием можно в любой день с 9:00 до 21:00
+                </p>
+
+            </details>
+            <details class="accordion">
+                <summary class="accordion__toggler">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.9146 8.6046H11.3953V1.08527C11.3953 0.742732 10.9302 0 9.99996 0C9.06974 0 8.6046 0.742772 8.6046 1.08527V8.60464H1.08527C0.742772 8.6046 0 9.06973 0 9.99992C0 10.9301 0.742772 11.3953 1.08527 11.3953H8.60464V18.9146C8.60464 19.2571 9.06974 19.9999 10 19.9999C10.9303 19.9999 11.3954 19.2571 11.3954 18.9146V11.3953H18.9147C19.2572 11.3953 20 10.9302 20 9.99992C20 9.06965 19.2571 8.6046 18.9146 8.6046Z"/>
+                    </svg>
+                    Сколько длится сессия?
+                </summary>
+                <p>
+                    Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. Записаться на прием можно в любой день с 9:00 до 21:00
+                </p>
+            </details>
+            <details class="accordion">
+                <summary class="accordion__toggler">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.9146 8.6046H11.3953V1.08527C11.3953 0.742732 10.9302 0 9.99996 0C9.06974 0 8.6046 0.742772 8.6046 1.08527V8.60464H1.08527C0.742772 8.6046 0 9.06973 0 9.99992C0 10.9301 0.742772 11.3953 1.08527 11.3953H8.60464V18.9146C8.60464 19.2571 9.06974 19.9999 10 19.9999C10.9303 19.9999 11.3954 19.2571 11.3954 18.9146V11.3953H18.9147C19.2572 11.3953 20 10.9302 20 9.99992C20 9.06965 19.2571 8.6046 18.9146 8.6046Z"/>
+                    </svg>
+                    Сколько стоит консультация?
+                </summary>
+                <p>
+                    Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. Записаться на прием можно в любой день с 9:00 до 21:00
+                </p>
+            </details>
+            <details class="accordion">
+                <summary class="accordion__toggler">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.9146 8.6046H11.3953V1.08527C11.3953 0.742732 10.9302 0 9.99996 0C9.06974 0 8.6046 0.742772 8.6046 1.08527V8.60464H1.08527C0.742772 8.6046 0 9.06973 0 9.99992C0 10.9301 0.742772 11.3953 1.08527 11.3953H8.60464V18.9146C8.60464 19.2571 9.06974 19.9999 10 19.9999C10.9303 19.9999 11.3954 19.2571 11.3954 18.9146V11.3953H18.9147C19.2572 11.3953 20 10.9302 20 9.99992C20 9.06965 19.2571 8.6046 18.9146 8.6046Z"/>
+                    </svg>
+                    Что из себя представляют консультации?
+                </summary>
+                <p>
+                    Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. Записаться на прием можно в любой день с 9:00 до 21:00
+                </p>
+            </details>
+        </section>
+        <section class="center contacts">
+            <img class="contacts__map" src="img/map.jpg" alt="карта">
+            <div class="contacts__content">
+                <h2 class="contacts__title">
+                    Контакты
+                </h2>
+                <ul class="contacts__list">
+                    <li><a class="contacts__link" href="tel:380991234567">Тел: +380 99 123 45 67</a></li>
+                    <li><a class="contacts__link" href="viber://pa?chatURI=380991755582" target="_blank" rel="nofollow">Viber: +380 99 123 45 67</a></li>
+                    <li><a class="contacts__link" href="https://telegram.me/vladpovelitsa" target="_blank" rel="nofollow">Telegram: @phyholog_sergei</a></li>
+                    <li><a class="contacts__link" href="https://instagram.com/vladpovelitsa/" target="_blank" rel="nofollow">Instagram: @phyholog_sergei</a></li>
+                    <li><a class="contacts__link" href="mailto:phyholog_sergei@gmail.com">E-mail: phyholog_sergei@gmail.com</a></li>
+                    <li><a class="contacts__link" href="https://goo.gl/maps/DhAUhovExqcBfe7j8" target="_blank" rel="nofollow">Адрес: Ул. Центральная д. 10, офис 1</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="center sale">
+            <h2 class="sale__title">
+                Записаться со скидкой 50 грн
+            </h2>
+            <form class="form form--sale">
+                <input type="text" class="form__input" placeholder="Ваше имя *">
+                <input type="tel" class="form__input" placeholder="Ваш телефон *">
+                <button type="submit" class="button">Отправить</button>
+                <label class="form__checkbox">
+                    <input type="checkbox" class="form__checkbox_input" checked>
+                    <span class="form__checkbox_label">Я согласен с политикой конфиденциальности</span>
+                </label>
+            </form>
+
+        </section>
+    </main>
+    <footer class="footer center" id="footer">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="лого">
+        </a>
+        <ul class="footer__nav">
+            <li><a class="footer__link" target="_blank" rel="nofollow" href="https://instagram.com/vladpovelitsa/">@phyholog_sergei</a></li>
+            <li><a class="footer__link"  target="_blank" rel="nofollow" href="viber://pa?chatURI=380991755582">+380 99 123 45 67</a></li>
+            <li><a class="footer__link"  target="_blank" rel="nofollow" href="https://telegram.me/vladpovelitsa">@phyholog_sergei</a></li>
+            <li><a class="footer__link" href="tel:380991234567">+380 99 123 45 67</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
